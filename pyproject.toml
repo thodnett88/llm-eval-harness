@@ -1,0 +1,20 @@
+[project]
+name = "llm-eval-harness"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "thodnett88", email = "hodnetttania@gmail.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "anthropic>=2.3.0",
+    "pydantic>=2.14.1",
+]
+
+[project.scripts]
+llm-eval-harness = "llm_eval_harness:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
